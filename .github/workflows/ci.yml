@@ -38,3 +38,5 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: ./CiCdTestApp/Dockerfile  # Specify the correct Dockerfile path
+        context: ./CiCdTestApp  # Set the build context to the app directory
